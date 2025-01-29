@@ -8,7 +8,7 @@ class UserRequest extends FormRequest
 {
     public function authorize()
     {
-        return true; // Permite a requisição
+        return true;
     }
 
     public function rules()

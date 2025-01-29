@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Services\UserService;
 use App\DTOs\UserDTO;
 use App\Http\Requests\UserRequest;
-use Illuminate\Http\Request;
+
 
 class UserController extends Controller
 {
