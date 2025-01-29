@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // })->middleware('auth:sanctum');
 
-Route::get('/user', function () {
-    return 'User info';
-});
+Route::prefix('users')->group(base_path('routes/api-user.php'));
+Route::prefix('product')->group(base_path('routes/api-product.php'));
+
+
