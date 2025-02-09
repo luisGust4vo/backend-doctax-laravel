@@ -23,10 +23,10 @@ class UserRequest extends FormRequest
     }
 
     public function failedValidation(Validator $validator)
-{
-    throw new HttpResponseException(response()->json([
-        'message' => 'Os dados enviados são inválidos.',
-        'errors' => $validator->errors()
-    ], 422));
-}
+    {
+        throw new HttpResponseException(response()->json([
+            'message' => 'Os dados enviados são inválidos no Request validator.',
+            'errors' => $validator->errors()
+        ], 422));
+    }
 }
