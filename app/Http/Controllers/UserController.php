@@ -21,11 +21,7 @@ class UserController extends Controller
         return response()->json($this->userService->getAllUsers());
     }
 
-    public function store(UserRequest $request)
-    {
-        $userDTO = new UserDTO($request->validated());
-        return response()->json($this->userService->createUser($userDTO), 201);
-    }
+
 
     public function show($id)
     {
